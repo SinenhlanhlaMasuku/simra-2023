@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simra -Household Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script defer src="scripts/dashboard.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo-box">
+            <img src="/assets/images/logo.png" alt="Logo" width="60">
+        </div>
+
+        <div class="user-info-box">
+            <div class="name-email-box">
+                <h3 id="name-text">KUBEKA MOSES</h3>
+                <h5 id="email-text">mkay.py@gmail.com</h5>
+            </div>
+            <img src="/assets/images/cherry.png" alt="cherry" id="user-icon" width="50">
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="nav-bar">
+            <div class="nav-btn-box">
+                <input type="button" value="Home" class="btn" id="home-button">
+            </div>
+            <div class="nav-btn-box">
+                <input type="button" value="Profile" class="btn" id="profile-button">
+            </div>
+            <div class="nav-btn-box">
+                <input type="button" value="Help" class="btn" id="help-button">
+            </div>
+            <div class="nav-btn-box">
+                <input type="button" value="About Us" class="btn" id="about-button">
+            </div>
+            <div class="nav-btn-box">
+                <input type="button" value="Logout" class="btn" id="logout-button">
+            </div>
+        </div>
+
+        <div class="section-box" id="home-section">
+
+            <div class="num-cases-box">
+                <div class="area-box">
+                    <h3>Number of reported cases in your area</h3>
+                    <h4 id="area-text">Soshanguve</h4>
+                    <input type="button" value="Change Area" id="change-area-btn" class="btn">
+                </div>
+                <h1 id="num-cases-text">0</h1>
+            </div>
+
+            <div class="report-box">
+
+                <h3>Report</h3>
+
+                <form action="">
+
+                    <label for="color-of-strip">What color is your strip?</label>
+                    <select id="color-of-strip" class="inputs">
+                        <option value="white">white</option>
+                        <option value="black">Black</option>
+                    </select>
+
+                    <label for="water-source">What color is your water source?</label>
+                    <select id="water-source" class="inputs">
+                        <option value="water-s1">Water Source 1</option>
+                        <option value="water-s2">Water Source 2</option>
+                    </select>
+
+                    <label for="">Please submit a photo of your H2S Strip below</label>
+
+                    <img src="/assets/images/images.png" alt="image" width="80">
+
+                    <input type="file" id="image-input">
+
+                    <input type="button" value="Submit" id="submit-report-btn" class="btn">
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="section-box" id="help-section">
+            
+            <div class="inner-section">
+
+                <h2 class="topic">WHAT IS AN H2S STRIP?</h2>
+                <p>
+                    H2S is a hydrogen sulfide testing strip used to test the ph of water
+                    and help detect if the waterbeing tested is contaminated.
+                </p>
+                <div class="sub-topic">
+                    <h3 class="topic topic2">HOW TO TEST WATER USING H2S STRIP</h3>
+                    <h4>Here is a step by step guide:</h4>
+                </div>
+                
+                <div class="list-container">
+                    
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
